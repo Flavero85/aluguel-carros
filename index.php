@@ -40,7 +40,7 @@
                 </form>
             </div>
             <div class="col-lg-8 col-md-6 col-12" >
-                <img src="basico.png" class="img-fluid" alt="Carro basico">
+                <img src="basico.png" class="img-fluid" alt="Carro basico"  id="imagem" >
                 
             </div>
         </div>
