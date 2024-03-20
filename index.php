@@ -11,12 +11,12 @@
 </head>
 <body class="bg-warning">
     <div class="container" >
-        <div class="row" >
-            <div class="col-lg-4 col-md-6 col-12 text-center" >
-                <i class="bi bi-car-front text-primary" style="font-size: 2rem;"></i>
+        <div class="row mt-5" >
+            <div class="col-lg-4 col-md-6 col-12 text-center bg-light shadow" >
+                <i class="bi bi-car-front text-warning" style="font-size: 4rem;"></i>
                 <h1>Encontre o veículo certo para voce!</h1>
                 <p>Preencha as informações abaixo</p>
-                <form>
+                <form action="pedido.php" method="post">
                 <div class="mb-3 text-start">
                     <label class="form-label" for="Nome">Nome:</label>
                     <input class="form-control" name="nome" id="nome" type="text">    
@@ -27,21 +27,24 @@
                 </div>
                 <div class="mb-3 text-start">
                     <label class="form-label" for="Selecione o tipo de veículo">Tipo de veículo:</label>
-                    <select class="form-select" name="veículo" id="veiculo" onchange="Trocar();" > 
+                    <select class="form-select" name="veiculo" id="veiculo" onchange="Trocar();" > 
                         <option value="Básico">Básico</option>
                         <option value="Esporte">Esporte</option>
                         <option value="Completo">Completo</option>
                     </select>
                 </div>
                 <div class="mb-3" >
-                    <button class="btn btn-primary w-100">Reservar</button>
+                    <button class="btn btn-warning w-100 text-light fw-bolder rounded-0">Fazer minha reserva</button>
                 </div>
                     
                 </form>
             </div>
             <div class="col-lg-8 col-md-6 col-12" >
-                <img src="basico.png" class="img-fluid" alt="Carro basico"  id="imagem" >
-                
+                <h1 class="ms-5">VOCÊ PODE ALUGAR ESSE VEÍCULO POR R$ <span id="valor" class="text-primary fw-bolder"> 99</span> /DIA</h1>
+                <p class="ms-5 lead">Válido para todo o território nacional</p>
+                <div class="text-center">
+                <img src="basico.png" class="img-fluid w-75" alt="Carro basico"  id="imagem" >
+                </div>
             </div>
         </div>
 
